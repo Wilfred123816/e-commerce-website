@@ -3,7 +3,7 @@
 A modern, responsive e-commerce product page with fully functional shopping cart built with HTML, CSS, and JavaScript.
 
 Live Demo
-(https://wilfredmonyenye.github.io/e-commerce-website)
+(https://wilfred123816.github.io/e-commerce-website/)
 
 Features
 -Product Gallery-with thumbnail navigation
