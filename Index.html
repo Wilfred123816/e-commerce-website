@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Premium Wireless Headphones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Cart Icon -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#">Nexus</a>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added dynamically -->
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price" id="totalPrice">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Product Section -->
+        <section class="product-section">
+            <div class="container">
+                <div class="product-container">
+                    <!-- Product Images -->
+                    <div class="product-images">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Nexus Wireless Headphones" id="mainImage">
+                        </div>
+                        <div class="image-thumbnails">
+                            <div class="thumbnail active" data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Headphones front view">
+                            </div>
+                            <div class="thumbnail" data-image="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                                <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Headphones side view">
+                            </div>
+                            <div class="thumbnail" data-image="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Headphones in use">
+                            </div>
+                            <div class="thumbnail" data-image="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Headphones case">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="product-details">
+                        <div class="product-category">Wireless Headphones</div>
+                        <h1 class="product-title">Nexus Pro X100</h1>
+                        
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.5 (128 Reviews)</span>
+                        </div>
+                        
+                        <p class="product-description">
+                            Experience premium sound quality with our latest wireless headphones. 
+                            Featuring active noise cancellation, 30-hour battery life, and ultra-comfortable 
+                            memory foam ear cushions for all-day listening.
+                        </p>
+                        
+                        <div class="product-features">
+                            <div class="feature">
+                                <i class="fas fa-volume-up"></i>
+                                <span>Active Noise Cancellation</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bluetooth"></i>
+                                <span>Bluetooth 5.2</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-battery-full"></i>
+                                <span>30-hour Battery</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-headset"></i>
+                                <span>Voice Assistant</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">$199.99</span>
+                            <span class="original-price">$249.99</span>
+                            <span class="discount">Save 20%</span>
+                        </div>
+                        
+                        <div class="product-options">
+                            <div class="color-option">
+                                <h4>Color:</h4>
+                                <div class="color-selector">
+                                    <div class="color black active" data-color="black"></div>
+                                    <div class="color white" data-color="white"></div>
+                                    <div class="color blue" data-color="blue"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="quantity-option">
+                                <h4>Quantity:</h4>
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus" id="quantityMinus">-</button>
+                                    <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" max="10">
+                                    <button class="quantity-btn plus" id="quantityPlus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="add-to-cart-btn" id="addToCartBtn">
+                                <i class="fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                            <button class="buy-now-btn">
+                                <i class="fas fa-bolt"></i> Buy Now
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="delivery-info">
+                            <div class="info-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <div>
+                                    <h5>Free Shipping</h5>
+                                    <p>Delivery in 3-5 business days</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-undo"></i>
+                                <div>
+                                    <h5>30-Day Returns</h5>
+                                    <p>Easy return policy</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h5>2-Year Warranty</h5>
+                                    <p>Manufacturer warranty included</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Products Section -->
+        <section class="related-products">
+            <div class="container">
+                <h2 class="section-title">You Might Also Like</h2>
+                <div class="products-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1504274066651-8d31a536b11a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Wireless Earbuds">
+                            <button class="quick-add-btn">+</button>
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Nexus Air Pods</h3>
+                            <p class="product-card-desc">True wireless earbuds</p>
+                            <div class="product-card-price">
+                                <span class="current">$129.99</span>
+                                <span class="original">$159.99</span>
+                            </div>
+                            <button class="card-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Headphones Case">
+                            <button class="quick-add-btn">+</button>
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Travel Case</h3>
+                            <p class="product-card-desc">Premium protective case</p>
+                            <div class="product-card-price">
+                                <span class="current">$29.99</span>
+                            </div>
+                            <button class="card-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <div class="product-card-image">
+                            <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Charging Cable">
+                            <button class="quick-add-btn">+</button>
+                        </div>
+                        <div class="product-card-info">
+                            <h3>Fast Charger</h3>
+                            <p class="product-card-desc">USB-C fast charging</p>
+                            <div class="product-card-price">
+                                <span class="current">$24.99</span>
+                            </div>
+                            <button class="card-add-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nexus Audio</h3>
+                    <p>Premium audio products for the modern lifestyle. Quality sound meets innovative design.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Nexus Audio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
