@@ -32,7 +32,15 @@ Technologies Used
 
 Screenshots
 Desktop View:![alt text](image.png)![alt text](image-1.png)![alt text](image-2.png)
-Mobile View: (images/screenshot-mobile.png)
+Mobile View: 
+![Screenshot_20260103-084630](https://github.com/user-attachments/assets/2821a5c4-db4d-488b-b82a-a15528321b2b)![Screenshot_20260103-084613](https://github.com/user-attachments/assets/978bfeb1-4378-43e3-a569-98a65deb89bf)![Screenshot_20260103-084617](https://github.com/user-attachments/assets/0710b262-e8f5-4c48-bbf8-3202a57bf4a8)![Screenshot_20260103-084607](https://github.com/user-attachments/assets/3580a3ec-fba3-4d60-98d6-68ac9f829b58)![Screenshot_20260103-084622](https://github.com/user-attachments/assets/4373b3a4-f10e-4b8d-bde8-e195549aaaec)![Screenshot_20260103-084633](https://github.com/user-attachments/assets/bc7b5a40-2e0c-4585-a1ff-c8125ea4611b)![Screenshot_20260103-084626](https://github.com/user-attachments/assets/79bca444-bd51-46a1-8b89-298b4434cbf4)
+
+
+
+
+
+
+
 
 Installation & Setup
 1. Clone the repository:
